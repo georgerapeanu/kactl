@@ -1,0 +1,16 @@
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set softtabstop=2
+set number relativenumber
+set autoindent
+set colorcolumn=80
+set textwidth=80
+set wrap
+set foldmethod=syntax
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+colo default 
+
+nmap <C-@> :! make "%:r"<CR>
+nmap <F9> :! ./"%:r"
+nmap <F4> :! submit "%:r"<CR>
